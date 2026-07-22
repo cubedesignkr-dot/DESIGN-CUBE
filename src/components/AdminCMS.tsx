@@ -206,14 +206,6 @@ export default function AdminCMS({
     triggerSuccessNotification('마스터 비밀번호로 재설정되었습니다.');
   };
 
-  // Auto Login Helper for client testing
-  const handleGuestLogin = () => {
-    onLogin();
-    setLoginError('');
-    setPasscode('');
-    triggerSuccessNotification('테스트 관리자로 신속 로그인하였습니다.');
-  };
-
   // Settings Handlers
   const handleSettingsSave = (e: React.FormEvent) => {
     e.preventDefault();
@@ -429,16 +421,7 @@ export default function AdminCMS({
             </button>
           </form>
 
-          <div className="border-t border-neutral-100 pt-5 text-center">
-            <p className="text-xs text-neutral-400 mb-3 font-light">개발 중 신속한 기능 테스트를 원하시나요?</p>
-            <button
-              onClick={handleGuestLogin}
-              className="px-4 py-2 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 text-[10px] font-bold tracking-wider uppercase rounded-none transition-colors cursor-pointer border border-neutral-200"
-            >
-              GUEST QUICK BYPASS
-            </button>
-            <p className="text-[10px] text-neutral-400 mt-3">정식 비밀번호: <span className="font-mono text-neutral-600 font-semibold">{adminPassword}</span></p>
-          </div>
+
         </div>
       </div>
     );

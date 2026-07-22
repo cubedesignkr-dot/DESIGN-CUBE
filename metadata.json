@@ -1,0 +1,6 @@
+{
+  "name": "큐브인테리어",
+  "description": "현대적이고 고급스러운 인테리어 전문 회사 큐브인테리어(Cube Interior)의 공식 웹사이트 및 CMS 관리자 대시보드 시스템",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
